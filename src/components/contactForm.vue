@@ -50,6 +50,7 @@ export default {
         if (!regex.test(this.user.phone) || this.user.name == ''){
       alert('Ошибка при вводе данных!');
       } else{
+      ym(91198556,'reachGoal','clickSend')
       alert('Отлично!');
       } 
       console.log (this.user.name)
