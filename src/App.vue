@@ -29,4 +29,13 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+h1 {
+  margin: 5px;
+}
+p {
+  margin: 10px;
+}
+h3 {
+  margin: 5px;
+}
 </style>

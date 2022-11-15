@@ -1,18 +1,87 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="cards__container"> 
+      <div class="card-flex" v-for="good,index in goods" :key="index" >
+        <div class="cad-img" :style="{ backgroundImage: 'url('+ good.src+')' }"></div>
+        <div class="good__container">
+        <h1>{{good.title}}</h1>
+        <p>{{good.about}}</p>
+        <h3>{{good.price}}</h3>
+        <button class="btn" @click="targetGood = index">Заказать</button>
+        </div>
+      </div>
+    </div>
+    <contactForm :data="targetGood ==-1 ? {title:'Товар не выбран'} : goods[targetGood]" />  
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import contactForm from '@/components/contactForm.vue'
 
 export default {
-  name: 'Home',
+  name: 'home',
+  data() {
+    return {
+
+      goods: [
+        { 
+          title:'Кеды Даниэль', 
+          src:require('@/assets/img/ced.jpeg'),
+          about:'Самые прыгучие',
+          price: '3400 ₽'
+        },
+         { 
+          title:'Кеды Асет', 
+          src:require('@/assets/img/ced2.jpeg'),
+          about:'Самые большие',
+          price: '5000 ₽'
+        },
+         { 
+          title:'Кеды Даниил', 
+          src:require('@/assets/img/ced3.jpeg'),
+          about:'Самые креативные',
+          price: '1000 ₽'
+        },
+         { 
+          title:'Кеды Дима', 
+          src:require('@/assets/img/ced4.jpeg'),
+          about:'Самые мерзкие',
+          price: '100000 ₽'
+        }  
+      ],
+      targetGood: -1
+    }
+  },
   components: {
-    HelloWorld
+    contactForm
   }
 }
 </script>
+
+<style scoped>
+.cad-img {
+height: 248px;
+width: 100%;
+background-repeat: no-repeat;
+background-size: contain;
+}
+.cards__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+.card-flex {
+  height: 420px;
+    width: 248px;
+  border: 1px solid gold;
+}
+.good__container {
+  margin-top: 20px;
+}
+
+</style>
