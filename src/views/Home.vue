@@ -25,27 +25,27 @@ export default {
 
       goods: [
         { 
-          title:'Кеды Даниэль', 
+          title:'Кеды ElGrande', 
           src:require('@/assets/img/ced.jpeg'),
           about:'Самые прыгучие',
           price: '3400 ₽'
         },
          { 
-          title:'Кеды Асет', 
+          title:'Кеды Billioner', 
           src:require('@/assets/img/ced2.jpeg'),
           about:'Самые большие',
           price: '5000 ₽'
         },
          { 
-          title:'Кеды Даниил', 
+          title:'Кеды Shmups', 
           src:require('@/assets/img/ced3.jpeg'),
           about:'Самые креативные',
-          price: '1000 ₽'
+          price: '4300 ₽'
         },
          { 
-          title:'Кеды Дима', 
+          title:'Кеды Fainar', 
           src:require('@/assets/img/ced4.jpeg'),
-          about:'Самые мерзкие',
+          about:'Самые роскошные',
           price: '100000 ₽'
         }  
       ],
