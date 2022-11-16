@@ -3,8 +3,10 @@
 
    
 	<div class="contact-form__ul">
+
+		<button class="close__btn" @click="$emit('close')">X</button>
 	
-		<input class="contact-form__input" placeholder="Товар" disabled :value="data.title"/> {{data}}
+		<input class="contact-form__input" placeholder="Товар" disabled :value="data.title"/>
 
 		<div class="contact-form-1__ul">
 			<div class="contact-form-1__container">
@@ -103,8 +105,23 @@ p {
 
 }
 
-
-
+.close__btn {
+	background-color: white;
+    border: none;
+    font-weight: bold;
+    /* left: 0%; */
+    transform: translate(198px, -23px);
+    font-size: 19px;
+	cursor: pointer;
+}
+.contact-form {
+	background-color: #00000075;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 .contact-form__input {
   display: block;
   width: 100%;
@@ -134,7 +151,13 @@ p {
   outline: 0;
 }
 .contact-form__ul {
-	
+	position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 40px;	
 }
 .contact-form-1__ul {
 	display: flex;
@@ -150,6 +173,7 @@ p {
 	font-size: 15px;
 	line-height: 22px;
 	transition: all 0.3s ease;
+	cursor: pointer;
 }
 .contact-form__button:hover {
 	background-color: var(--contact-button-hover-color)

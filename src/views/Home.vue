@@ -11,7 +11,7 @@
         </div>
       </div>
     </div>
-    <contactForm :data="targetGood ==-1 ? {title:'Товар не выбран'} : goods[targetGood]" />  
+    <contactForm :data="targetGood ==-1 ? {title:'Товар не выбран'} : goods[targetGood]" v-if="targetGood != -1" @close="closeForm()"/>  
   </div>
 </template>
 
@@ -52,6 +52,12 @@ export default {
       targetGood: -1
     }
   },
+  methods: {
+    closeForm() {
+      this.targetGood = -1
+    }
+  },
+
   components: {
     contactForm
   }
