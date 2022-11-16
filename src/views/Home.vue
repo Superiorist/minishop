@@ -80,6 +80,7 @@ export default {
   gap: 20px;
   padding-top: 60px;
   margin-bottom: 60px;
+  flex-wrap: wrap;
 }
 .card-flex {
   height: 420px;
