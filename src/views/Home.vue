@@ -66,10 +66,10 @@ export default {
 
 <style scoped>
 .cad-img {
-height: 248px;
-width: 100%;
-background-repeat: no-repeat;
-background-size: contain;
+  height: 248px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .cards__container {
   height: 100%;
@@ -83,7 +83,7 @@ background-size: contain;
 }
 .card-flex {
   height: 420px;
-    width: 248px;
+  width: 248px;
   border: 1px solid gold;
 }
 .good__container {

@@ -40,7 +40,7 @@ export default {
   		user: {
   			name: 'Асет',
   			phone: '89253879344',
-        title: '',
+        	title: '',
   		}
   	}
   },
@@ -49,13 +49,13 @@ export default {
     checkPhone() {
       let regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
       let phone = '89000000000';
-        if (!regex.test(this.user.phone) || this.user.name == ''){
-      alert('Ошибка при вводе данных!');
-      } else{
-      ym(91198556,'reachGoal','clickSend')
-      alert('Отлично!');
+    	if (!regex.test(this.user.phone) || this.user.name == ''){
+       alert('Ошибка при вводе данных!');
+       } else{
+       ym(91198556,'reachGoal','clickSend')
+       alert('Отлично!');
       } 
-      console.log (this.user.name)
+       console.log (this.user.name)
     },
  }
 }
@@ -109,7 +109,6 @@ p {
 	background-color: white;
     border: none;
     font-weight: bold;
-    /* left: 0%; */
     transform: translate(198px, -23px);
     font-size: 19px;
 	cursor: pointer;
@@ -123,41 +122,41 @@ p {
     left: 0;
 }
 .contact-form__input {
-  display: block;
-  width: 100%;
-  height: 48px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 22px;
-  margin-bottom: 32px;
- 
+	display: block;
+	width: 100%;
+	height: 48px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 22px;
+	margin-bottom: 32px;
+	
 
-  background-clip: padding-box;
-  border: 1px solid #656E75;
-  border-radius: 0;
-  box-shadow: none;
-  transition: all .2s linear;
-  padding: 8px;
-  box-sizing: border-box;
+	background-clip: padding-box;
+	border: 1px solid #656E75;
+	border-radius: 0;
+	box-shadow: none;
+	transition: all .2s linear;
+	padding: 8px;
+	box-sizing: border-box;
 }
 .contact-form__input::placeholder {
-  color: #212529;
-  opacity: 0.4;
+	color: #212529;
+	opacity: 0.4;
 }
 .contact-form__input:focus {
-  border: 1px solid #656E75;
-  border-radius: 0;
-  outline: 0;
+	border: 1px solid #656E75;
+	border-radius: 0;
+	outline: 0;
 }
 .contact-form__ul {
 	position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    background-color: white;
-    box-sizing: border-box;
-    padding: 40px;	
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	background-color: white;
+	box-sizing: border-box;
+	padding: 40px;	
 }
 .contact-form-1__ul {
 	display: flex;
