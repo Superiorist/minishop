@@ -157,6 +157,7 @@ p {
 	background-color: white;
 	box-sizing: border-box;
 	padding: 40px;	
+	min-width: 430px;
 }
 .contact-form-1__ul {
 	display: flex;
